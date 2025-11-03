@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link na Bio - Studio BM</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        /* Animação para o texto rolar da direita para a esquerda */
+        @keyframes scroll-left {
+            0% {
+                transform: translateX(100%);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        /* Animação para o texto rolar da esquerda para a direita */
+        @keyframes scroll-right {
+            0% {
+                transform: translateX(-100%);
+            }
+
+            100% {
+                transform: translateX(100%);
+            }
+        }
+
+        /* Animação de opacidade sutil */
+        @keyframes fade-in-out {
+
+            0%,
+            100% {
+                opacity: 0.08;
+            }
+
+            /* Opacidade mais sutil para não competir */
+            50% {
+                opacity: 0.25;
+            }
+        }
+
+        /* Classes para aplicar as animações */
+        .animate-scroll-left {
+            animation: scroll-left var(--speed) linear infinite;
+        }
+
+        .animate-scroll-right {
+            animation: scroll-right var(--speed) linear infinite;
+        }
+
+        .animate-fade {
+            animation: fade-in-out 7s ease-in-out infinite alternate;
+        }
+
+        /* Definir a variável CSS --speed para cada linha */
+        .line-1 {
+            --speed: 28s;
+        }
+
+        .line-2 {
+            --speed: 22s;
+        }
+
+        .line-3 {
+            --speed: 30s;
+        }
+
+        .line-4 {
+            --speed: 25s;
+        }
+
+        .line-5 {
+            --speed: 20s;
+        }
+
+        .line-6 {
+            --speed: 32s;
+        }
+
+        .line-7 {
+            --speed: 26s;
+        }
+
+        /* Nova linha */
+        .line-8 {
+            --speed: 23s;
+        }
+
+        /* Nova linha */
+        .line-9 {
+            --speed: 31s;
+        }
+
+        /* Nova linha */
+        .line-10 {
+            --speed: 29s;
+        }
+
+        /* Nova linha */
+
+        /* Estilo para o modal */
+        #specialty-modal {
+            transition: opacity 0.3s ease;
+        }
+    </style>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Montserrat', 'sans-serif'],
+                    },
+                    colors: {
+                        'dark-bg': '#1a1a1a',
+                        'light-gray': '#e0e0e0',
+                        'medium-gray': '#888888',
+                        /* Paleta P&B: Destaque agora é branco */
+                        'highlight': '#FFFFFF',
+                        'button-hover': '#e5e7eb',
+                        'button-border': '#FFFFFF',
+                        'button-bg': '#2a2a2a',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-dark-bg text-light-gray min-h-screen flex items-center justify-center p-4 overflow-hidden">
+
+    <div class="flex flex-col items-center w-full max-w-md">
+
+
+        <div class="relative w-full flex flex-col items-center mb-6">
+
+
+            <div
+                class="absolute inset-0 w-full h-full flex flex-col justify-around z-0 overflow-hidden whitespace-nowrap">
+
+
+                <div
+                    class="animate-scroll-right line-1 text-5xl md:text-6xl font-bold text-medium-gray select-none animate-fade">
+                    &nbsp;STUDIO BM • BELEZA E ESTÉTICA • STUDIO BM • BELEZA E ESTÉTICA •
+                </div>
+
+
+                <div
+                    class="animate-scroll-left line-2 text-4xl md:text-5xl font-bold text-medium-gray opacity-10 select-none">
+                    &nbsp;BEATRIZ • THAYLA • MARI • BEATRIZ • THAYLA • MARI •
+                </div>
+
+
+                <div
+                    class="animate-scroll-right line-3 text-6xl md:text-7xl font-bold text-medium-gray select-none animate-fade">
+                    &nbsp;STUDIO BM • CUIDADO E BEM-ESTAR • STUDIO BM •
+                </div>
+
+
+                <div
+                    class="animate-scroll-left line-4 text-3xl md:text-4xl font-bold text-medium-gray opacity-15 select-none">
+                    &nbsp;DESIGN DE SOBRANCELHAS • LASH LIFT • MICROPIGMENTAÇÃO •
+                </div>
+
+
+                <div
+                    class="animate-scroll-right line-5 text-4xl md:text-5xl font-bold text-medium-gray select-none animate-fade">
+                    &nbsp;STUDIO BM • SUA BELEZA EM FOCO • STUDIO BM •
+                </div>
+
+
+                <div
+                    class="animate-scroll-left line-6 text-5xl md:text-6xl font-bold text-medium-gray opacity-15 select-none">
+                    &nbsp;PROFISSIONALISMO • QUALIDADE • RESULTADOS INCRÍVEIS •
+                </div>
+
+
+                <div
+                    class="animate-scroll-right line-7 text-3xl md:text-4xl font-bold text-medium-gray select-none animate-fade">
+                    &nbsp;TRANSFORMAÇÃO • ESTÉTICA AVANÇADA • STUDIO BM •
+                </div>
+
+
+                <div
+                    class="animate-scroll-left line-8 text-6xl md:text-7xl font-bold text-medium-gray opacity-10 select-none">
+                    &nbsp;BEATRIZ • THAYLA • MARI • STUDIO BM •
+                </div>
+
+
+                <div
+                    class="animate-scroll-right line-9 text-5xl md:text-6xl font-bold text-medium-gray select-none animate-fade">
+                    &nbsp;CUIDADO COM VOCÊ • STUDIO BM • CUIDADO COM VOCÊ •
+                </div>
+
+
+                <div
+                    class="animate-scroll-left line-10 text-4xl md:text-5xl font-bold text-medium-gray opacity-15 select-none">
+                    &nbsp;EXPERIÊNCIA ÚNICA • BELEZA • SAÚDE • ESTÉTICA •
+                </div>
+
+            </div>
+
+            <!-- Logo do Studio BM --><img src="logobm.jpg" alt="Logo Studio BM"
+                class="w-32 h-32 md:w-40 md:h-40 object-cover rounded-full   shadow-md mb-4 relative z-10">
+
+
+            <h1
+                class="text-4xl md:text-5xl font-bold text-light-gray relative z-10 hover:text-highlight transition-colors duration-200 cursor-pointer">
+                STUDIO BM
+            </h1>
+            <p class="text-md text-gray-400 relative z-10 font-light mt-1">BELEZA E ESTÉTICA</p>
+        </div>
+
+
+        <div class="relative z-10 w-full max-w-xs mb-8">
+            <h2 class="text-center text-lg text-highlight font-semibold mb-4">NOSSA EQUIPE</h2>
+            <div class="flex justify-around items-start text-center">
+
+
+                <div class="team-member flex flex-col items-center cursor-pointer transition-opacity duration-200 hover:opacity-80"
+                    data-name="Beatriz"
+                    data-specialties="Micropigmentação Shadow|Remoção a Laser|Brow Lamination|Design Personalizado">
+                    <img src="be.jpg" alt="Beatriz"
+                        class="w-20 h-20 rounded-full border-2 border-highlight shadow-md object-cover">
+                    <span class="mt-2 text-sm font-medium text-light-gray">Beatriz</span>
+                </div>
+
+
+                <div class="team-member flex flex-col items-center cursor-pointer transition-opacity duration-200 hover:opacity-80"
+                    data-name="Thayla"
+                    data-specialties="Extensão de Cílios Fios Tecnológicos|Brasileiro|Glamour|Egípcio|Whispy">
+                    <img src="tha.jpg" alt="Thayla"
+                        class="w-20 h-20 rounded-full border-2 border-highlight shadow-md object-cover">
+                    <span class="mt-2 text-sm font-medium text-light-gray">Thayla</span>
+                </div>
+
+
+                <div class="team-member flex flex-col items-center cursor-pointer transition-opacity duration-200 hover:opacity-80"
+                    data-name="Mari" data-specialties="Depilação a Cera|Corporal|Facial">
+                    <img src="mari.jpg" alt="Mari"
+                        class="w-20 h-20 rounded-full border-2 border-highlight shadow-md object-cover">
+                    <span class="mt-2 text-sm font-medium text-light-gray">Mari</span>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="flex flex-col gap-4 w-full max-w-xs relative z-10">
+
+
+            <a href="#"
+                class="bg-button-bg border-b-2 border-button-border p-4 rounded-lg flex items-center justify-center gap-3 text-lg text-light-gray font-semibold transition-all duration-300 hover:bg-button-hover hover:text-dark-bg hover:border-button-hover shadow-lg hover:shadow-xl hover:shadow-highlight/40 transform hover:scale-105">
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-message-square">
+                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                </svg>
+                <span>WhatsApp (Único)</span>
+            </a>
+
+
+            <a href="#"
+                class="bg-gray-800 border-b border-gray-600 p-4 rounded-lg flex items-center justify-center gap-3 text-lg text-gray-300 font-medium transition-all duration-300 hover:bg-light-gray hover:text-dark-bg hover:border-light-gray shadow-md hover:shadow-lg transform hover:scale-105">
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-calendar">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                </svg>
+                <span>Agendar Horário</span>
+            </a>
+
+
+            <a href="#"
+                class="bg-gray-800 border-b border-gray-600 p-4 rounded-lg flex items-center justify-center gap-3 text-lg text-gray-300 font-medium transition-all duration-300 hover:bg-light-gray hover:text-dark-bg hover:border-light-gray shadow-md hover:shadow-lg transform hover:scale-105">
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-camera">
+                    <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
+                    <circle cx="12" cy="13" r="4"></circle>
+                </svg>
+                <span>Nosso Instagram</span>
+            </a>
+
+
+            <a href="#"
+                class="bg-gray-800 border-b border-gray-600 p-4 rounded-lg flex items-center justify-center gap-3 text-lg text-gray-300 font-medium transition-all duration-300 hover:bg-light-gray hover:text-dark-bg hover:border-light-gray shadow-md hover:shadow-lg transform hover:scale-105">
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-map-pin">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <span>Nossa Localização</span>
+            </a>
+
+
+            <a href="#"
+                class="bg-gray-800 border-b border-gray-600 p-4 rounded-lg flex items-center justify-center gap-3 text-lg text-gray-300 font-medium transition-all duration-300 hover:bg-light-gray hover:text-dark-bg hover:border-light-gray shadow-md hover:shadow-lg transform hover:scale-105">
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-list">
+                    <line x1="8" y1="6" x2="21" y2="6"></line>
+                    <line x1="8" y1="12" x2="21" y2="12"></line>
+                    <line x1="8" y1="18" x2="21" y2="18"></line>
+                    <line x1="3" y1="6" x2="3.01" y2="6"></line>
+                    <line x1="3" y1="12" x2="3.01" y2="12"></line>
+                    <line x1="3" y1="18" x2="3.01" y2="18"></line>
+                </svg>
+                <span>Catálogo de Serviços</span>
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div id="specialty-modal"
+        class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-black bg-opacity-80 backdrop-blur-sm">
+        <div class="bg-button-bg w-full max-w-md p-6 rounded-lg shadow-xl border border-gray-700 relative">
+
+            <button id="close-modal" class="absolute top-3 right-3 text-gray-400 hover:text-white transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-x">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+
+
+            <h3 id="modal-name" class="text-2xl font-bold text-highlight mb-4">Nome da Profissional</h3>
+
+
+            <ul id="modal-specialties" class="list-disc list-inside space-y-2 text-lg text-light-gray">
+
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const modal = document.getElementById('specialty-modal');
+            const closeModal = document.getElementById('close-modal');
+            const modalName = document.getElementById('modal-name');
+            const modalSpecialties = document.getElementById('modal-specialties');
+            const teamMembers = document.querySelectorAll('.team-member');
+
+            teamMembers.forEach(member => {
+                member.addEventListener('click', () => {
+
+                    const name = member.dataset.name;
+                    const specialties = member.dataset.specialties.split('|');
+
+
+                    modalName.textContent = name;
+
+
+                    modalSpecialties.innerHTML = '';
+
+
+                    specialties.forEach(spec => {
+                        const li = document.createElement('li');
+                        li.textContent = spec;
+                        modalSpecialties.appendChild(li);
+                    });
+
+
+                    modal.classList.remove('hidden');
+                });
+            });
+
+
+            const close = () => {
+                modal.classList.add('hidden');
+            };
+
+
+            closeModal.addEventListener('click', close);
+
+
+            modal.addEventListener('click', (e) => {
+                if (e.target === modal) {
+                    close();
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>
